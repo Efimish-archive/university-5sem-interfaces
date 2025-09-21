@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 # Compile the C++ file
-g++ "$1" -o "${1%.cpp}.out"
+g++ "$1" -o "${1%.cpp}.out" -I/opt/homebrew/include -L/opt/homebrew/lib -lboost_program_options
 if [ $? -ne 0 ]; then
   echo "Compilation failed."
   exit 1
