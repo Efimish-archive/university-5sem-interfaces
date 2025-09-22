@@ -7,7 +7,7 @@ dollars:
 	g++ src/dollars.cpp -o dist/dollars.out
 
 list-arguments:
-	g++ src/list-arguments.cpp -o dist/list-arguments.out -I/opt/homebrew/include -L/opt/homebrew/lib -lboost_program_options
+	g++ src/list-arguments.cpp -o dist/list-arguments.out
 
 2:
 	g++ src/2.cpp -o dist/2.out -I/opt/homebrew/include -L/opt/homebrew/lib -lboost_program_options
